@@ -33,7 +33,7 @@ import leetcode.models.TreeNode;
  --------------------------------------------------------------------------------------------------------
 
  Seems very similar to House Robber I, except we have multiple paths. I think the trick is to dp from the bottom up
- as we do pre order traversal
+ as we do post order traversal
 
  */
 public class House_Robber_III_337 {

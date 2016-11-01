@@ -1,4 +1,4 @@
-package leetcode.questions.dp;
+package leetcode.questions.pointer_scan;
 
 /**
  You have a number of envelopes with widths and heights given as a pair of integers (w, h).

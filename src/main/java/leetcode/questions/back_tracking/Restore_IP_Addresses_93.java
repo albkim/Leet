@@ -34,23 +34,21 @@ public class Restore_IP_Addresses_93 {
 
     private static void backtrack(List<String> result, ArrayList<String> strings, String s, int index) {
         // base condition
-        if ((strings.size() == 3) && (index < s.length()) && (s.length() - index <= 3)) {
-            String lastPart = s.substring(index, s.length());
-            if (validIPPart(lastPart)) {
-                // now this is a valid ip address
-                StringBuilder ip = new StringBuilder();
-                for (String part : strings) {
-                    ip.append(part);
+        if ((strings.size() == 4) && (index == s.length())) {
+            // now this is a valid ip address
+            StringBuilder ip = new StringBuilder();
+            for (String part : strings) {
+                if (ip.length() > 0) {
                     ip.append('.');
                 }
-                ip.append(lastPart);
-                result.add(ip.toString());
+                ip.append(part);
             }
+            result.add(ip.toString());
         }
 
         // variations
-        for (int scan = index + 1; scan <= Math.min(index + 3, s.length() -1); scan++) {
-            String part = s.substring(index, scan);
+        for (int scan = index; scan < Math.min(index + 3, s.length()); scan++) {
+            String part = s.substring(index, scan + 1);
 
             if (validIPPart(part)) {
                 strings.add(part);
@@ -59,7 +57,7 @@ public class Restore_IP_Addresses_93 {
                 continue;
             }
 
-            backtrack(result, strings, s, scan);
+            backtrack(result, strings, s, scan + 1);
 
             strings.remove(strings.size() - 1);
         }

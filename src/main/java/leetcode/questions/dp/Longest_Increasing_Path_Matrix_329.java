@@ -1,7 +1,7 @@
 package leetcode.questions.dp;
 
 /**
- * Created by Sang on 10/22/2016.Given an integer matrix, find the length of the longest increasing path.
+ Given an integer matrix, find the length of the longest increasing path.
 
  From each cell, you can either move to four directions: left, right, up or down.
  You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed).

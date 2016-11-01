@@ -30,7 +30,7 @@ import java.util.Random;
 
  for sample of k
     keep first k
-    for ith item, draw a random number from 1 to j. If j is < k, replace jth item from k
+    for ith item, draw a random number from 1 to i. If i is < k, replace ith item from k
         so for ith, there is k/i probability that it will replace an item. For existing item there is k/i * 1/k probability that
         it will be replaced. So overall there is 1/i probability for each item. The numbers surviving ith round is
         k/i (opposite of being replaced 1/i). For i+1, there is 1/(i+1) probability it will be replaced so the probability that

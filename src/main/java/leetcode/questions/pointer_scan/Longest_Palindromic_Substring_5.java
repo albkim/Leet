@@ -9,6 +9,10 @@ package leetcode.questions.pointer_scan;
  xax and xx
 
  so we just need to examine as we scan the string left to right
+
+ O(n^2)
+
+ Brute force is O(n^3)
  */
 public class Longest_Palindromic_Substring_5 {
 

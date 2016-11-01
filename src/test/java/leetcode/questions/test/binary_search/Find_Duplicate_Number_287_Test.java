@@ -1,6 +1,6 @@
 package leetcode.questions.test.binary_search;
 
-import leetcode.questions.bits.Find_Duplicate_Number_287;
+import leetcode.questions.binary_search.Find_Duplicate_Number_287;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

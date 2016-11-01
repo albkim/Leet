@@ -26,6 +26,8 @@ import java.util.Set;
  ".Q.."]
  ]
 
+ -------------------------------------------------------------------------------------------------------------------
+
  Seems like a simple back tracking problem. Since queen can move in any direction in straight line or diagonally
  once we occupy a column/row, another queen cannot use it. So at most we could try n columns/rows. Simply try the combination
  until we have a valid solution (where we can place n number of queens, and by virtue of the initial queen in different

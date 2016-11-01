@@ -64,7 +64,7 @@ public class Wildcard_Matching_44 {
             for (int j = 1; j <= p.length(); j++) {
                 if (p.charAt(j - 1) == '*') {
                     // we need to consider two cases, 0 occurrence or multiple
-                    dp[i][j] = dp[i-1][j] /* 0 occurrence */ || dp[i][j-1] /* ignore current char, 1+ occurrence */;
+                    dp[i][j] =  dp[i][j-1] /* 0 occurrence */ || dp[i-1][j] /* ignore current char, 1+ occurrence */;
                 }
                 else {
                     // previous result with current char comparison; either equal or wild card

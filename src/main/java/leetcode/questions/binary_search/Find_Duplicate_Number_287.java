@@ -1,4 +1,4 @@
-package leetcode.questions.bits;
+package leetcode.questions.binary_search;
 
 /**
  Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive),

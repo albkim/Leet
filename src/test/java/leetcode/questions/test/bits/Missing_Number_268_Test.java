@@ -1,6 +1,6 @@
 package leetcode.questions.test.bits;
 
-import leetcode.questions.binary_search.Missing_Number_268;
+import leetcode.questions.bits.Missing_Number_268;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

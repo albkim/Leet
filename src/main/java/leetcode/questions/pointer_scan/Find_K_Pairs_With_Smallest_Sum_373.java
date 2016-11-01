@@ -31,14 +31,11 @@ import java.util.*;
  All possible pairs are returned from the sequence:
  [1,3],[2,3]
 
+ -------------------------------------------------------------------------------------------------
 
- // I think we just need two pointers, and use both to scan first array, staggering as you go
- // there should be a pair point for each, cycling through each elements of the second array
- // only logic should be that we compare the current sum by each pair and put the smallest and advance
-
- // the above was wrong...as there are counter examples...this has to be more complex...we need to have n pointers
- // where each item of first element could be paired with different item of the second array and then finding the lowest
- // of them
+  This has to be more complex...we need to have n pointers
+  where each item of first element could be paired with different item of the second array and then finding the lowest
+  of them
 
  m + nlogn
 

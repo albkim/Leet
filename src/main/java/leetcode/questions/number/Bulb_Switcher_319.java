@@ -23,7 +23,7 @@ package leetcode.questions.number;
 
  Also notice if it was touched even times, it will be on...if odd, it will be off.
 
- So only the ones that are touched event times (number of factors other than 1 is even). Only perfect square numbers.
+ So only the ones that are touched even times (number of factors other than 1 is even). Only perfect square numbers.
 
  2^2 = 4 -> 2, 4
  3^3 = 9 -> 3, 9

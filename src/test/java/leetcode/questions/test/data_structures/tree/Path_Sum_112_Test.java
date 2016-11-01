@@ -1,6 +1,6 @@
-package leetcode.questions.test.back_tracking;
+package leetcode.questions.test.data_structures.tree;
 
-import leetcode.questions.back_tracking.Path_Sum_112;
+import leetcode.questions.data_structures.tree.Path_Sum_112;
 import leetcode.models.TreeNode;
 import org.junit.Test;
 
@@ -15,6 +15,14 @@ public class Path_Sum_112_Test {
     public void testEdge() {
         assertFalse(Path_Sum_112.hasPathSum(null, 0));
         assertFalse(Path_Sum_112.hasPathSum(null, 1));
+    }
+
+    @Test
+    public void testEdge1() {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+
+        assertFalse(Path_Sum_112.hasPathSum(root, 1));
     }
 
     @Test

@@ -1,6 +1,6 @@
 package leetcode.questions.test;
 
-import leetcode.questions.H_Index_274;
+import leetcode.questions.sorting.H_Index_274;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

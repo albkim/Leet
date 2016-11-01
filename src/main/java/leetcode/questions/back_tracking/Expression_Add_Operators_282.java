@@ -18,9 +18,12 @@ import java.util.List;
  --------------------------------------------------------------------------------------------------
 
  We can try various operators and see if it equals the target. If so then add it to the result.
- If we didn't have "*" which changes the order of execution this would be easy...we can pass the result
- to next iteration. Maybe we can proactively evaluate "*" and "" then we can handle it like normal
- 
+ If we didn't have "*" and "" which changes the order of execution this would be easy...we can pass the result
+ to next iteration.
+
+ Handle "" by enumerating number of all length
+ Handle "*" by passing the current additional value (-value if subtraction). Then the current answer to be passed is
+    answer - previous + (previous * number), then previous * number as current value
  */
 public class Expression_Add_Operators_282 {
 

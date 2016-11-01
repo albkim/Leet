@@ -5,9 +5,9 @@ import leetcode.models.TreeNode;
 /**
  Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 
- According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between
+ According to the definition of LCA on Wikipedia: ï¿½The lowest common ancestor is defined between
  two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a
- node to be a descendant of itself).”
+ node to be a descendant of itself).ï¿½
              _______6______
             /              \
         ___2__          ___8__
@@ -22,7 +22,7 @@ import leetcode.models.TreeNode;
 
  --------------------------------------------------------------------------------------------
 
- As we do in order, we want to find the node where we satisfy this condition
+ As we do post order traversal, we want to find the node where we satisfy this condition
 
     we find the values from other two sides or one side with the current node
 

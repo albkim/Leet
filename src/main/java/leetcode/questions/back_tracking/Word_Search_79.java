@@ -21,7 +21,7 @@ package leetcode.questions.back_tracking;
 
  ---------------------------------------------------------------------------------------------------------------
 
- Find the first char, and the bfs with backtracking to see if word can be made?
+ Find the first char, and the dfs with backtracking to see if word can be made?
 
  */
 public class Word_Search_79 {

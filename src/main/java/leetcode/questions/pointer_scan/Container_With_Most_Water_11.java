@@ -7,6 +7,8 @@ package leetcode.questions.pointer_scan;
 
  Note: You may not slant the container.
 
+ ----------------------------------------------------------------------------------------------------------------------
+
  This is interesting, since we are interested in area, we want to either maximize the distance between two lines
  or the height.
 

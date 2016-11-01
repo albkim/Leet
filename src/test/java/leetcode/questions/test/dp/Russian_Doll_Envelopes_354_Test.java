@@ -1,6 +1,6 @@
 package leetcode.test.questions.dp;
 
-import leetcode.questions.dp.Russian_Doll_Envelopes_354;
+import leetcode.questions.pointer_scan.Russian_Doll_Envelopes_354;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package leetcode.questions;
+package leetcode.questions.sorting;
 
 /**
  Given an array of citations (each citation is a non-negative integer) of a researcher,

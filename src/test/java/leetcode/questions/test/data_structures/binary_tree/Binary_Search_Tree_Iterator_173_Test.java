@@ -1,7 +1,7 @@
 package leetcode.questions.test.data_structures.binary_tree;
 
 import leetcode.models.TreeNode;
-import leetcode.questions.data_structures.binary_tree.Binary_Search_Tree_Iterator_173;
+import leetcode.questions.data_structures.binary_search_tree.Binary_Search_Tree_Iterator_173;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

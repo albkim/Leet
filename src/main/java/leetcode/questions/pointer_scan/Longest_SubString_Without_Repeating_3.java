@@ -14,6 +14,8 @@ import java.util.Map;
 
  Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
+ ---------------------------------------------------------------------------------------------------------------------------------------
+
  seems like longest palindrome question except the check function is different
  walk through each char left and right and then expand to either side, using something like a map to keep tracking of chars, once existing char is
  encountered on both side, stop expanding and record the length. Now keep tracking for the max length and respective indexes

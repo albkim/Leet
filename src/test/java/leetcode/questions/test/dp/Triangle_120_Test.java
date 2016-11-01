@@ -1,6 +1,6 @@
 package leetcode.questions.test.dp;
 
-import leetcode.questions.back_tracking.Triangle_120;
+import leetcode.questions.dp.Triangle_120;
 import org.junit.Test;
 
 import java.util.Arrays;

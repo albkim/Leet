@@ -20,6 +20,8 @@ package leetcode.questions.dp;
 
  Given a particular n ≥ 1, find out how much money you need to have to guarantee a win.
 
+ ------------------------------------------------------------------------------------------------------------------------
+
  Initial thought is that this is binary search since that way I am guaranteed to win. However I don't think it minimizes
  my loss.
  So Seems like this is game theory algo...minimax algorithm. We need to evaluate all possible combination and pick the
@@ -74,14 +76,13 @@ public class Number_Higher_Lower_II_375 {
         // how about columns - start, rows - end, so 4, it would look like this?
         //         1        2       3       4
         //  1      0
-        //  2      1        0google code jam 2016
-
+        //  2      1        0
         //  3      2        2       0
         //  4               3       3       0
         //
         //  1,4 - min(1 + f(2, 4), 2 + f(3, 4))
 
-        // Now building this up seems a big tricky, in order to fill a range (e.g. 1-4) I need to know all the
+        // Now building this up seems a bit tricky, in order to fill a range (e.g. 1-4) I need to know all the
         // components that makes up that range. However I build it up by increasing the ranges, the largest
         // would be ultimately the 1-n range
 

@@ -31,7 +31,7 @@ public class Regular_Expression_Matching_10 {
             j -> c    *    a    *    b
         i   T    F    T    F    T    F
         a   F    F    F    T    T    F
-        a   F    F    F    T    T    F
+        a   F    F    F    F    T    F
         b   F    F    F    F    F    T
      */
     public static boolean isMatch(String s, String p) {

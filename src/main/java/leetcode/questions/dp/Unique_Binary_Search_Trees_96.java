@@ -20,7 +20,7 @@ package leetcode.questions.dp;
 
  when there is
  1 node, there is only 1 variation
- 2 node, there is only when 1st is root, and one when 2nd is root. giving total of 2
+ 2 node, there is only one when 1st is root, and one when 2nd is root. giving total of 2
  3 node, total of 5
     1 (2 numbers to the right, meaning there are 2 combinations)
     2 (1 on each side, 1 * 1 = 1)
