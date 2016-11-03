@@ -1,4 +1,4 @@
-package leetcode.questions.back_tracking;
+package leetcode.hard;
 
 import java.util.ArrayList;
 import java.util.List;

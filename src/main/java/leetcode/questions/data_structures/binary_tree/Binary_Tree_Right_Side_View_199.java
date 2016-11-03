@@ -36,10 +36,39 @@ import java.util.Queue;
 
  Try level traversal...and just take the last element
 
+ The level traversal uses too much space...another solution is to do pre order traversal (right first) and try to add one
+ that matches the level
+
  */
 public class Binary_Tree_Right_Side_View_199 {
 
     public static List<Integer> rightSideView(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+
+        if (root == null) {
+            return result;
+        }
+
+        rightSideViewRecurse(result, root, 0);
+
+        return result;
+    }
+
+    private static void rightSideViewRecurse(List<Integer> result, TreeNode root, int level) {
+        if (root == null) {
+            return;
+        }
+
+        if (result.size() == level) {
+            result.add(root.val);
+        }
+
+        // right side first
+        rightSideViewRecurse(result, root.right, level + 1);
+        rightSideViewRecurse(result, root.left, level + 1);
+    }
+
+    public static List<Integer> rightSideViewLevel(TreeNode root) {
         List<Integer> result = new ArrayList<>();
 
         if (root == null) {

@@ -1,6 +1,6 @@
-package leetcode.questions.test.data_structures.stack;
+package leetcode.hard.test;
 
-import leetcode.questions.data_structures.stack.Create_Maximum_Number_321;
+import leetcode.hard.Create_Maximum_Number_321;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;

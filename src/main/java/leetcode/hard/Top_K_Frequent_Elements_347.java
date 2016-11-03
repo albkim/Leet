@@ -1,4 +1,4 @@
-package leetcode.questions.array;
+package leetcode.hard;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package leetcode.questions.data_structures.binary_indexed_tree;
+package leetcode.hard;
 
 /**
  Given an integer array nums, find the sum of the elements between indices i and j (i ? j), inclusive.

@@ -1,4 +1,4 @@
-package leetcode.questions.data_structures.binary_tree;
+package leetcode.hard;
 
 import leetcode.models.TreeNode;
 

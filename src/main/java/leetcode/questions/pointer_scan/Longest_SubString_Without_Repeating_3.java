@@ -35,6 +35,36 @@ import java.util.Map;
 public class Longest_SubString_Without_Repeating_3 {
 
     public static int lengthOfLongestSubstring(String s) {
+        if ((s == null) || (s.length() == 0)) {
+            return 0;
+        }
+
+        int length = 0;
+        int maxLength = Integer.MIN_VALUE;
+        Map<Character, Integer> lookup = new HashMap<>();
+
+        for (int index = 0; index < s.length(); index++) {
+            char chr = s.charAt(index);
+            if (lookup.containsKey(chr)) {
+                maxLength = Math.max(maxLength, length);
+                for (int removeIndex = index - length; removeIndex < lookup.get(chr); removeIndex++) {
+                    lookup.remove(s.charAt(removeIndex));
+                }
+                length = index - lookup.get(chr);
+                lookup.put(chr, index);
+            }
+            else {
+                lookup.put(chr, index);
+                length++;
+            }
+        }
+
+        maxLength = Math.max(maxLength, length);
+
+        return maxLength;
+    }
+    /*
+    public static int lengthOfLongestSubstring(String s) {
         if (s == null) {
             throw new IllegalArgumentException();
         }
@@ -79,5 +109,6 @@ public class Longest_SubString_Without_Repeating_3 {
         // something bad happened
         throw new IllegalStateException();
     }
+    */
 
 }

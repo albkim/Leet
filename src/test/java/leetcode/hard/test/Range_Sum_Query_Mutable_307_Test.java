@@ -1,6 +1,6 @@
-package leetcode.questions.test.data_structures.binary_indexed_tree;
+package leetcode.hard.test;
 
-import leetcode.questions.data_structures.binary_indexed_tree.Range_Sum_Query_Mutable_307;
+import leetcode.hard.Range_Sum_Query_Mutable_307;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

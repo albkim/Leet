@@ -1,7 +1,7 @@
-package leetcode.questions.test.data_structures.binary_search_tree;
+package leetcode.hard.test;
 
 import leetcode.models.TreeNode;
-import leetcode.questions.data_structures.binary_search_tree.Serialize_Deserialize_BST;
+import leetcode.hard.Serialize_Deserialize_BST_449;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 /**
  * Created by Sang on 10/17/2016.
  */
-public class Serialize_Deserialize_BST_Test {
+public class Serialize_Deserialize_BST_449_Test {
 
     @Test
     public void testSimple() {
@@ -23,7 +23,7 @@ public class Serialize_Deserialize_BST_Test {
         root.right.left.right = new TreeNode(7);
         root.right.right = new TreeNode(9);
 
-        TreeNode copy = Serialize_Deserialize_BST.deserialize(Serialize_Deserialize_BST.serialize(root));
+        TreeNode copy = Serialize_Deserialize_BST_449.deserialize(Serialize_Deserialize_BST_449.serialize(root));
 
         assertNotNull(copy);
 

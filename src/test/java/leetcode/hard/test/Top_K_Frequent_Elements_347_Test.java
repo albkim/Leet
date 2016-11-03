@@ -1,6 +1,6 @@
-package leetcode.test.questions.array;
+package leetcode.hard.test;
 
-import leetcode.questions.array.Top_K_Frequent_Elements_347;
+import leetcode.hard.Top_K_Frequent_Elements_347;
 import org.junit.Test;
 
 import java.util.List;

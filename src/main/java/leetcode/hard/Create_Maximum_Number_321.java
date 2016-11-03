@@ -1,4 +1,4 @@
-package leetcode.questions.data_structures.stack;
+package leetcode.hard;
 
 import java.util.Stack;
 

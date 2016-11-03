@@ -1,6 +1,6 @@
-package leetcode.questions.test.data_structures.graph;
+package leetcode.hard.test;
 
-import leetcode.questions.data_structures.graph.Remove_Invalid_Parentheses_301;
+import leetcode.hard.Remove_Invalid_Parentheses_301;
 import org.junit.Test;
 
 import java.util.List;

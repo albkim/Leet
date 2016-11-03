@@ -1,6 +1,6 @@
-package leetcode.questions.test.array;
+package leetcode.hard.test;
 
-import leetcode.questions.array.Longest_Consecutive_Sequence_128;
+import leetcode.hard.Longest_Consecutive_Sequence_128;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

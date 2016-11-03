@@ -1,6 +1,6 @@
-package leetcode.questions.test.data_structures.stack;
+package leetcode.hard.test;
 
-import leetcode.questions.data_structures.stack.Remove_Duplicate_Letters_316;
+import leetcode.hard.Remove_Duplicate_Letters_316;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package leetcode.questions.data_structures.graph;
+package leetcode.hard;
 
 import java.util.*;
 

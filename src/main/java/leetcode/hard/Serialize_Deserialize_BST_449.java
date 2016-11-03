@@ -1,4 +1,4 @@
-package leetcode.questions.data_structures.binary_search_tree;
+package leetcode.hard;
 
 import leetcode.models.TreeNode;
 
@@ -10,7 +10,7 @@ import java.util.Stack;
 
  Should only need to store pre-order traversal
  */
-public class Serialize_Deserialize_BST {
+public class Serialize_Deserialize_BST_449 {
 
     public static String serialize(TreeNode root) {
         StringBuilder result = new StringBuilder();

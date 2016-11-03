@@ -1,6 +1,6 @@
 package leetcode.questions.test.array;
 
-import leetcode.questions.array.Remove_Duplicates_Sorted_Array_26;
+import leetcode.questions.pointer_scan.Remove_Duplicates_Sorted_Array_26;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

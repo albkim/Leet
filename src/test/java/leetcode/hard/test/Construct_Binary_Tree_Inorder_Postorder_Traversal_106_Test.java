@@ -1,6 +1,6 @@
-package leetcode.questions.test.data_structures.binary_tree;
+package leetcode.hard.test;
 
-import leetcode.questions.data_structures.binary_tree.Construct_Binary_Tree_Inorder_Postorder_Traversal_106;
+import leetcode.hard.Construct_Binary_Tree_Inorder_Postorder_Traversal_106;
 import leetcode.models.TreeNode;
 import org.junit.Test;
 

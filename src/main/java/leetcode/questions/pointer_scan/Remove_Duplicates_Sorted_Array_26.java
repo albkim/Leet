@@ -1,4 +1,4 @@
-package leetcode.questions.array;
+package leetcode.questions.pointer_scan;
 
 /**
  Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
