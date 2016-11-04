@@ -1,7 +1,7 @@
-package leetcode.questions.test.dp;
+package leetcode.hard.test;
 
 import leetcode.models.TreeNode;
-import leetcode.questions.dp.House_Robber_III_337;
+import leetcode.hard.House_Robber_III_337;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

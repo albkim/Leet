@@ -1,6 +1,6 @@
-package leetcode.questions.test.dp;
+package leetcode.hard.test;
 
-import leetcode.questions.dp.Regular_Expression_Matching_10;
+import leetcode.hard.Regular_Expression_Matching_10;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

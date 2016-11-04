@@ -1,6 +1,6 @@
-package leetcode.questions.test.pointer_scan;
+package leetcode.hard.test;
 
-import leetcode.questions.pointer_scan.Minimum_Window_Substring_76;
+import leetcode.hard.Minimum_Window_Substring_76;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

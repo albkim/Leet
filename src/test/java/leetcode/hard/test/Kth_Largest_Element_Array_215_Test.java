@@ -1,6 +1,6 @@
-package leetcode.questions.test.sorting;
+package leetcode.hard.test;
 
-import leetcode.questions.sorting.Kth_Largest_Element_Array_215;
+import leetcode.hard.Kth_Largest_Element_Array_215;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

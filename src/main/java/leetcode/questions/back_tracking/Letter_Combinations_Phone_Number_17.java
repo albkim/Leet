@@ -1,4 +1,4 @@
-package leetcode.questions;
+package leetcode.questions.back_tracking;
 
 import java.util.*;
 

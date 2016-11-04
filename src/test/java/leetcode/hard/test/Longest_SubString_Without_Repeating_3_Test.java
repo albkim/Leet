@@ -1,6 +1,6 @@
-package leetcode.questions.test.pointer_scan;
+package leetcode.hard.test;
 
-import leetcode.questions.pointer_scan.Longest_SubString_Without_Repeating_3;
+import leetcode.hard.Longest_SubString_Without_Repeating_3;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

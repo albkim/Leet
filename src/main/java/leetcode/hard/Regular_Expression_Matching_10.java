@@ -1,4 +1,4 @@
-package leetcode.questions.dp;
+package leetcode.hard;
 
 /**
  Implement regular expression matching with support for '.' and '*'.

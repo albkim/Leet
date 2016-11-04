@@ -1,6 +1,6 @@
-package leetcode.questions.test;
+package leetcode.questions.test.back_tracking;
 
-import leetcode.questions.Letter_Combinations_Phone_Number_17;
+import leetcode.questions.back_tracking.Letter_Combinations_Phone_Number_17;
 import org.junit.Test;
 
 import java.util.List;

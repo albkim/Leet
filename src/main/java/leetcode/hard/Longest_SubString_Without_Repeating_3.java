@@ -1,4 +1,4 @@
-package leetcode.questions.pointer_scan;
+package leetcode.hard;
 
 import java.util.HashMap;
 import java.util.Map;

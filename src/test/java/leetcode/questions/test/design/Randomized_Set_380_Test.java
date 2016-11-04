@@ -1,21 +1,23 @@
-package leetcode.questions.test;
+package leetcode.questions.test.design;
 
-import leetcode.questions.Randomized_Collection_381;
+import leetcode.questions.design.Randomized_Set_380;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by albertk on 8/22/16.
  */
-public class Randomized_Collection_381_Test {
+public class Randomized_Set_380_Test {
 
     @Test
     public void testInsert() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
 
         assertTrue(collection.insert(1));
         assertTrue(collection.insert(2));
@@ -23,7 +25,7 @@ public class Randomized_Collection_381_Test {
 
     @Test
     public void testInsertDupes() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
 
         assertTrue(collection.insert(1));
         assertFalse(collection.insert(1));
@@ -32,14 +34,14 @@ public class Randomized_Collection_381_Test {
 
     @Test
     public void testRemoveNotFound() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
 
         assertFalse(collection.remove(1));
     }
 
     @Test
     public void testRemoveNotFoundCorrect() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
 
         assertTrue(collection.insert(1));
         assertTrue(collection.remove(1));
@@ -48,7 +50,7 @@ public class Randomized_Collection_381_Test {
 
     @Test
     public void testRemoveFound() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
 
         assertTrue(collection.insert(1));
         assertTrue(collection.remove(1));
@@ -56,17 +58,17 @@ public class Randomized_Collection_381_Test {
 
     @Test
     public void testRemoveDupes() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
 
         assertTrue(collection.insert(1));
         assertFalse(collection.insert(1));
         assertTrue(collection.remove(1));
-        assertTrue(collection.remove(1));
+        assertFalse(collection.remove(1));
     }
 
     @Test
     public void testRemoveReplace() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
 
         assertTrue(collection.insert(1));
         assertTrue(collection.insert(2));
@@ -77,7 +79,7 @@ public class Randomized_Collection_381_Test {
 
     @Test
     public void testRemoveLast() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
 
         assertTrue(collection.insert(1));
         assertTrue(collection.insert(2));
@@ -87,24 +89,8 @@ public class Randomized_Collection_381_Test {
     }
 
     @Test
-    public void testRemoveComplex() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
-
-        assertTrue(collection.insert(1));
-        assertFalse(collection.insert(1));
-        assertTrue(collection.insert(2));
-        assertFalse(collection.insert(1));
-        assertFalse(collection.insert(2));
-        assertFalse(collection.insert(2));
-        assertTrue(collection.remove(1));
-        assertTrue(collection.remove(2));
-        assertTrue(collection.remove(2));
-        assertTrue(collection.remove(2));
-    }
-
-    @Test
     public void testShuffleDistribution() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
+        Randomized_Set_380 collection = new Randomized_Set_380();
         collection.insert(1);
         collection.insert(2);
         collection.insert(3);
@@ -144,32 +130,5 @@ public class Randomized_Collection_381_Test {
 
         assertEquals(0d, Math.sqrt(variance) / iterationCount, 0.5d);
     }
-
-    @Test
-    public void testShuffleDistributionDupes() {
-        Randomized_Collection_381 collection = new Randomized_Collection_381();
-        collection.insert(1);
-        collection.insert(1);
-        collection.insert(2);
-
-        // good test number for distribution would be n! * 10000
-        long iterationCount = 3 * 10000;
-
-        Map<Integer, Integer> lookup = new HashMap<>();
-
-        for (int count = 0; count < iterationCount; count++) {
-            int key = collection.getRandom();
-            if (lookup.containsKey(key)) {
-                lookup.put(key, lookup.get(key) + 1);
-            }
-            else {
-                lookup.put(key, 1);
-            }
-        }
-
-        // lookup should contain all nodes
-        assertEquals(2, lookup.size());
-        assertEquals(2d, lookup.get(1) / (1d * lookup.get(2)), 0.1d);
-    }
-
+    
 }

@@ -1,4 +1,4 @@
-package leetcode.questions.dp;
+package leetcode.hard;
 
 import leetcode.models.TreeNode;
 
