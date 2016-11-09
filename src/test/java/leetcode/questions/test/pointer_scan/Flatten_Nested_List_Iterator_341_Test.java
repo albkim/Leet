@@ -1,6 +1,7 @@
 package leetcode.questions.test.pointer_scan;
 
 import leetcode.models.NestedInteger;
+import leetcode.models.NestedIntegerImpl;
 import leetcode.questions.pointer_scan.Flatten_Nested_List_Iterator_341;
 import org.junit.Test;
 
@@ -14,50 +15,21 @@ import static org.junit.Assert.assertEquals;
  */
 public class Flatten_Nested_List_Iterator_341_Test {
 
-    public class TestNestedInteger implements NestedInteger {
-
-        private int intValue;
-        private List<NestedInteger> listValue;
-
-        public TestNestedInteger(int value) {
-            this.intValue = value;
-        }
-
-        public TestNestedInteger(List<NestedInteger> value) {
-            this.listValue = value;
-        }
-
-        @Override
-        public boolean isInteger() {
-            return this.listValue == null;
-        }
-
-        @Override
-        public Integer getInteger() {
-            return this.intValue;
-        }
-
-        @Override
-        public List<NestedInteger> getList() {
-            return this.listValue;
-        }
-    }
-
     @Test
     public void testSimple() {
         List<NestedInteger> firstValue = new ArrayList<>();
-        firstValue.add(new TestNestedInteger(1));
-        firstValue.add(new TestNestedInteger(1));
-        NestedInteger first = new TestNestedInteger(firstValue);
+        firstValue.add(new NestedIntegerImpl(1));
+        firstValue.add(new NestedIntegerImpl(1));
+        NestedInteger first = new NestedIntegerImpl(firstValue);
 
         List<NestedInteger> thirdValue = new ArrayList<>();
-        thirdValue.add(new TestNestedInteger(1));
-        thirdValue.add(new TestNestedInteger(1));
-        NestedInteger third = new TestNestedInteger(thirdValue);
+        thirdValue.add(new NestedIntegerImpl(1));
+        thirdValue.add(new NestedIntegerImpl(1));
+        NestedInteger third = new NestedIntegerImpl(thirdValue);
 
         List<NestedInteger> rootValue = new ArrayList<>();
         rootValue.add(first);
-        rootValue.add(new TestNestedInteger(2));
+        rootValue.add(new NestedIntegerImpl(2));
         rootValue.add(third);
 
         Flatten_Nested_List_Iterator_341 solution = new Flatten_Nested_List_Iterator_341(rootValue);
