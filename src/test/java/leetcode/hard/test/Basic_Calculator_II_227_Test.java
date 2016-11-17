@@ -1,6 +1,6 @@
-package leetcode.questions.test.data_structures.stack;
+package leetcode.hard.test;
 
-import leetcode.questions.data_structures.stack.Basic_Calculator_II_227;
+import leetcode.hard.Basic_Calculator_II_227;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

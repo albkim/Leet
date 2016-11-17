@@ -1,4 +1,4 @@
-package leetcode.questions.data_structures.stack;
+package leetcode.hard;
 
 import java.util.Stack;
 
@@ -24,6 +24,52 @@ import java.util.Stack;
 public class Basic_Calculator_II_227 {
 
     public static int calculate(String s) {
+        if ((s == null) || (s.trim().length() == 0)) {
+            return 0;
+        }
+
+        int sign = 1;
+        boolean divide = false;
+        Stack<Integer> stack = new Stack<>();
+
+        for (int index = 0; index < s.length(); index++) {
+            char chr = s.charAt(index);
+            if (Character.isDigit(chr)) {
+                int number = chr - '0';
+                while ((index + 1 < s.length()) && (Character.isDigit(s.charAt(index + 1)))) {
+                    number = (number * 10) + (s.charAt(index + 1) - '0');
+                    index++;
+                }
+
+                int result = (divide) ? (stack.pop() / number) : (sign * number);
+                stack.push(result);
+            }
+            else if (chr == '+') {
+                sign = 1;
+                divide = false;
+            }
+            else if (chr == '-') {
+                sign = -1;
+                divide = false;
+            }
+            else if (chr == '*') {
+                sign = stack.pop();
+                divide = false;
+            }
+            else if (chr == '/') {
+                divide = true;
+            }
+            // space
+        }
+
+        int result = 0;
+        while(!stack.isEmpty()) {
+            result += stack.pop();
+        }
+        return result;
+    }
+
+    public static int calculateString(String s) {
         if ((s == null) || (s.trim().length() == 0)) {
             return 0;
         }
