@@ -28,16 +28,36 @@ package leetcode.questions.binary_search;
 
  Seems like 2D binary search. Once we pick a number, we know all the numbers top left are small (pick 9 and we know top left
  rectangle is smaller (numbers above in the column have to be smaller, making all rows below smaller)
+
+ Looks like there is even better approach with O(m + n) complexity
+ We need to start either at top right corner or bottom left corner. If # is greater, it cannot exists in the entire row (since largest
+ is at right end), so can move down a row. If # is smaller, then it cannot exists in the column since smallest is in the top, so we
+ move left.
  */
 public class Search_2D_Matrix_II_240 {
 
     public static boolean searchMatrix(int[][] matrix, int target) {
-        int top = 0;
-        int bottom = matrix.length - 1;
-        int left = 0;
-        int right = matrix[0].length - 1;
+        return search(matrix, target);
+    }
 
-        return binarySearch2D(matrix, target, top, bottom, left, right);
+    private static boolean search(int[][] matrix, int target) {
+        int y = 0;
+        int x = matrix[0].length - 1;
+
+        while ((x >= 0) && (y < matrix.length)) {
+            int number = matrix[y][x];
+            if (number == target) {
+                return true;
+            }
+            else if (number < target) {
+                y++;
+            }
+            else if (number > target) {
+                x--;
+            }
+        }
+
+        return false;
     }
 
     private static boolean binarySearch2D(int[][] matrix, int target, int top, int bottom, int left, int right) {

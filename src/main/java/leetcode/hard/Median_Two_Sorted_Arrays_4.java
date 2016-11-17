@@ -1,4 +1,4 @@
-package leetcode.questions.binary_search;
+package leetcode.hard;
 
 /*
 

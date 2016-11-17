@@ -12,6 +12,7 @@ public class Search_2D_Matrix_II_240_Test {
 
     @Test
     public void testEdge() {
+        assertTrue(Search_2D_Matrix_II_240.searchMatrix(new int[][] {new int[]{-5}}, -5));
         assertFalse(Search_2D_Matrix_II_240.searchMatrix(new int[][] {new int[]{-5}}, -10));
     }
 

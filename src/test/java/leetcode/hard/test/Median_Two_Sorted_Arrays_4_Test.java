@@ -1,6 +1,6 @@
-package leetcode.questions.test.binary_search;
+package leetcode.hard.test;
 
-import leetcode.questions.binary_search.Median_Two_Sorted_Arrays_4;
+import leetcode.hard.Median_Two_Sorted_Arrays_4;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
