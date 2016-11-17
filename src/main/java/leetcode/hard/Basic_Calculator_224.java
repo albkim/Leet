@@ -1,4 +1,4 @@
-package leetcode.questions.data_structures.stack;
+package leetcode.hard;
 
 import java.util.Stack;
 
@@ -25,6 +25,55 @@ import java.util.Stack;
 public class Basic_Calculator_224 {
 
     public static int calculate(String s) {
+        if ((s == null) || (s.trim().length() == 0)) {
+            return 0;
+        }
+
+        Stack<Integer> stack = new Stack<>();
+        int result = 0;
+        int sign = 1;
+
+        for (int index = 0; index < s.length(); index++) {
+            char chr = s.charAt(index);
+            if (Character.isDigit(chr)) {
+                // parse the number out
+                int number = chr - '0';
+                while ((index + 1 < s.length()) && (Character.isDigit(s.charAt(index + 1)))) {
+                    number = number * 10 + (s.charAt(index + 1) - '0');
+                    index++;
+                }
+
+                // add the number to the result, carefully apply the current sign
+                result = result + (sign * number);
+            }
+            else if (chr == '+') {
+                sign = 1;
+            }
+            else if (chr == '-') {
+                sign = -1;
+            }
+            else if (chr == '(') {
+                // at this point, result holds all the sums thus far and there should be a sign
+                // xxx +
+
+                stack.push(result);
+                stack.push(sign);
+
+                result = 0;
+                sign = 1;
+            }
+            else if (chr == ')') {
+                // at this point, stack holds previous sum with sign and result holds current sum inside ()
+                result = (/* current sign */ stack.pop() * result) + /* previous sum */ stack.pop();
+            }
+
+            // spaces
+        }
+
+        return result;
+    }
+
+    public static int calculateString(String s) {
         if ((s == null) || (s.trim().length() == 0)) {
             return 0;
         }

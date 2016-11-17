@@ -1,6 +1,6 @@
-package leetcode.questions.test.data_structures.stack;
+package leetcode.hard.test;
 
-import leetcode.questions.data_structures.stack.Basic_Calculator_224;
+import leetcode.hard.Basic_Calculator_224;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -12,8 +12,8 @@ public class Basic_Calculator_224_Test {
 
     @Test
     public void testSimple() {
-        assertEquals(2, Basic_Calculator_224.calculate("1 + 1"));
         assertEquals(3, Basic_Calculator_224.calculate(" 2-1 + 2 "));
+        assertEquals(2, Basic_Calculator_224.calculate("1 + 1"));
     }
 
     @Test
